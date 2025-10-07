@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>Allow read for records in x_1805892_compan_0_enrollment, if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1805892_compan_0_enrollment</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[(function () {
+
+  if (gs.hasRole('x_1805892_compan_0.admin') || gs.hasRole('x_1805892_compan_0.instructor') || gs.hasRole('x_1805892_compan_0.user')) 
+    return false;
+
+  if (!current) return false;
+  var me = gs.getUserID();
+
+  if (current.requested_for) {
+    var u = new GlideRecord('sys_user');
+    if (u.get(current.requested_for) && u.manager == me) return true;
+  }
+
+  var app = new GlideRecord('sysapproval_approver');
+  app.addQuery('sysapproval', current.sys_id);
+  app.addQuery('approver', me);
+  app.addQuery('state', 'requested_for');
+  app.setLimit(1);
+  app.query();
+  if (app.next()) return true;
+
+  return false;
+})();]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-07 13:49:54</sys_created_on>
+        <sys_id>bcc38088c3603e10124829259901314d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1805892_compan_0_enrollment</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name>sys_security_acl_bcc38088c3603e10124829259901314d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-07 13:51:36</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>bcc38088c3603e10124829259901314d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-07 13:49:52</sys_created_on>
+        <sys_id>02f300c8c3603e101248292599013149</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-07 13:49:52</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

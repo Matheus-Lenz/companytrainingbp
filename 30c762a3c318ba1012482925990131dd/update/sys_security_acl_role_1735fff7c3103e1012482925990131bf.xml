@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-07 12:45:59</sys_created_on>
+        <sys_id>1735fff7c3103e1012482925990131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1805892_compan_0_schedule.x_1805892_compan_0.instructor</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_security_acl display_value="x_1805892_compan_0_schedule">ce353f3bc3103e1012482925990131d5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1735fff7c3103e1012482925990131bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-07 12:45:59</sys_updated_on>
+        <sys_user_role display_value="x_1805892_compan_0.instructor" name="x_1805892_compan_0.instructor">bcc7a2a3c318ba101248292599013125</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
