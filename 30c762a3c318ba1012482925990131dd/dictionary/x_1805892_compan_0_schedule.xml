@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="806df2ebc358ba1012482925990131ef" label="Schedule" max_length="40" name="x_1805892_compan_0_schedule" type="collection">
-        <element display="true" label="Schedule for" max_length="40" name="schedule_for" type="glide_date_time"/>
+        <element label="Schedule for" max_length="40" name="schedule_for" type="glide_date"/>
         <element label="Training" max_length="32" name="training" reference="x_1805892_compan_0_training" type="reference"/>
         <element label="Instructor" max_length="32" name="instructor" reference="sys_user" reference_qual="javascript:new TrainingRefQual().getInstructorsQuery('', '');" type="reference" use_reference_qualifier="advanced"/>
         <element label="Max Participants" max_length="40" name="max_participants" type="integer"/>

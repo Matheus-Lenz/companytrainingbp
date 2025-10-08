@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_1805892_compan_0.ScheduleUtils</api_name>
         <caller_access/>
@@ -12,28 +12,78 @@
         <script><![CDATA[var ScheduleUtils = Class.create();
 ScheduleUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 
-  getScheduleDate: function() {
-    var scheduleId = this.getParameter('sysparm_schedule_id');
-    var gr = new GlideRecord('x_1805892_compan_0_schedule');
-    if (gr.get(scheduleId)) {
-      return gr.date.getDisplayValue();
-    }
-    return '';
-  }
+  validateSchedule: function() {
+    var user = gs.getUserID();
+    var now = new GlideDateTime();
+    var validSchedules = [];
 
+    var training = this.getParameter('sysparm_training');
+
+    var sch = new GlideRecord('x_1805892_compan_0_schedule');
+    if (training)
+      sch.addQuery('training', training);
+    sch.addQuery('schedule_for', '>', now);
+    sch.query();
+
+    while (sch.next()) {
+      var scheduleId = sch.getUniqueValue();
+      var instructor = sch.getValue('instructor');
+      var capacity = parseInt(sch.getValue('max_participants'), 10);
+      var trainingDate = new GlideDateTime(sch.getValue('schedule_for'));
+
+      if (user == instructor)
+        continue;
+
+      var limitDate = new GlideDateTime();
+      limitDate.addDays(1);
+      if (trainingDate <= limitDate)
+        continue;
+
+
+      var current = new GlideRecord('x_1805892_compan_0_enrollment');
+      current.addQuery('schedule', scheduleId);
+      current.addQuery('state', 'IN', '1'); 
+      current.query();
+      if (current.getRowCount() >= capacity)
+        continue;
+
+      var existing = new GlideRecord('x_1805892_compan_0_enrollment');
+      existing.addQuery('schedule', scheduleId);
+      existing.addQuery('requested_for', user);
+      existing.query();
+      if (existing.next())
+        continue;
+
+      var past = new GlideRecord('x_1805892_compan_0_enrollment');
+      past.addQuery('training', sch.getValue('training'));
+      past.addQuery('requested_for', user);
+      past.query();
+      var count = 0;
+      while (past.next()) count++;
+      if (count >= 3)
+        continue;
+
+      validSchedules.push(scheduleId);
+    }
+
+    if (validSchedules.length === 0)
+      return 'sys_id=none';
+
+    return 'sys_idIN' + validSchedules.join(',');
+  }
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-08 14:47:41</sys_created_on>
         <sys_id>75aa5950c3e87e10124829259901318b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>ScheduleUtils</sys_name>
         <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
         <sys_update_name>sys_script_include_75aa5950c3e87e10124829259901318b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-08 14:47:41</sys_updated_on>
+        <sys_updated_on>2025-10-08 20:46:26</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>75aa5950c3e87e10124829259901318b</id>

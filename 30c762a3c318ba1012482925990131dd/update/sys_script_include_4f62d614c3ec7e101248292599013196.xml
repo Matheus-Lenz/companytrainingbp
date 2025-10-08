@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1805892_compan_0.TrainingScheduleValidation</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TrainingScheduleValidation</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TrainingScheduleValidation = Class.create();
+TrainingScheduleValidation.prototype = {
+    initialize: function() {},
+
+    checkDuplicateSchedule: function(trainingId, scheduleFor) {
+        var result = { valid: true };
+
+        var gr = new GlideRecord('x_1805892_compan_0_schedule');
+        gr.addQuery('training', trainingId);
+        gr.addQuery('schedule_for', scheduleFor);
+        gr.query();
+
+        if (gr.next()) {
+            result.valid = false;
+        }
+
+        return (result);
+    },
+
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 18:51:13</sys_created_on>
+        <sys_id>4f62d614c3ec7e101248292599013196</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>TrainingScheduleValidation</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name>sys_script_include_4f62d614c3ec7e101248292599013196</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 19:53:43</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4f62d614c3ec7e101248292599013196</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 18:51:13</sys_created_on>
+        <sys_id>ca82d614c3ec7e10124829259901319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 18:51:13</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
