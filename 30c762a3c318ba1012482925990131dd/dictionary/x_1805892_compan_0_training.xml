@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="5c4d32ebc358ba101248292599013170" label="Training" max_length="40" name="x_1805892_compan_0_training" type="collection">
-        <element label="Name" max_length="250" name="name" type="string"/>
+        <element display="true" label="Name" max_length="250" name="name" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="Translated Description" max_length="4000" name="translated_description" type="string"/>
         <element label="Description" max_length="4000" name="description" type="string"/>

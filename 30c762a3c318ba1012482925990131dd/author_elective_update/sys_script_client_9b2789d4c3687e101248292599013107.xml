@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>schedule</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Filter schedule on Enrollment</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        g_form.setFilter('schedule', 'sys_id=NULL');
+        return;
+    }
+
+    g_form.setFilter('schedule', 'training=' + newValue);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 13:22:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9b2789d4c3687e101248292599013107</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Filter schedule on Enrollment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name>sys_script_client_9b2789d4c3687e101248292599013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 13:24:11</sys_updated_on>
+        <table>x_1805892_compan_0_enrollment</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Company Training">30c762a3c318ba1012482925990131dd</application>
+        <file_path/>
+        <instance_id>313f7b06eb6d6e5cc040fddacad0cd21</instance_id>
+        <instance_name>dev348309</instance_name>
+        <name>sys_script_client_9b2789d4c3687e101248292599013107</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;schedule&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Filter schedule on Enrollment&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        g_form.setFilter('schedule', 'sys_id=NULL');
+        return;
+    }
+
+    g_form.setFilter('schedule', 'training=' + newValue);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-10-08 13:22:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9b2789d4c3687e101248292599013107&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Filter schedule on Enrollment&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Company Training" source="x_1805892_compan_0"&gt;30c762a3c318ba1012482925990131dd&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Company Training"&gt;30c762a3c318ba1012482925990131dd&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_9b2789d4c3687e101248292599013107&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-10-08 13:24:11&lt;/sys_updated_on&gt;&lt;table&gt;x_1805892_compan_0_enrollment&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-527425308</payload_hash>
+        <record_name>Filter schedule on Enrollment</record_name>
+        <reverted_from/>
+        <source>639ca2a3c318ba1012482925990131f7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 13:24:11</sys_created_on>
+        <sys_id>2fa70518c3687e101248292599013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199c3fe5d3f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 13:24:11</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>a3a7051813687e109542446efc2a4c59</update_guid>
+        <update_guid_history>a3a7051813687e109542446efc2a4c59:-527425308,dc67099424687e1087d61cbf9ffe0ff6:1301162916</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 13:26:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>01413b2af3874f458028b273edf81e11</sys_id>
+        <sys_metadata>9b2789d4c3687e101248292599013107</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filter schedule on Enrollment</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_parent display_value="Enrollment">539d7aebc358ba101248292599013129</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_scope_delete display_value="">3b27033c69ed47b797c933381cb053b1</sys_scope_delete>
+        <sys_update_name>sys_script_client_9b2789d4c3687e101248292599013107</sys_update_name>
+        <sys_update_version display_value="sys_script_client_9b2789d4c3687e101248292599013107">2fa70518c3687e101248292599013159</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 13:26:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

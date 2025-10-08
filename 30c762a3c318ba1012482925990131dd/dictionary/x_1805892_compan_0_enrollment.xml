@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="539d7aebc358ba101248292599013129" extends="task" label="Enrollment" max_length="40" name="x_1805892_compan_0_enrollment" type="collection">
         <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
-        <element label="Schedule" max_length="32" name="schedule" reference="x_1805892_compan_0_schedule" type="reference"/>
+        <element dependent="schedule.schedule_for" dependent_on_field="schedule.schedule_for" label="Schedule" max_length="32" name="schedule" reference="x_1805892_compan_0_schedule" type="reference" use_dependent_field="true"/>
         <element label="Training" max_length="32" name="training" reference="x_1805892_compan_0_training" type="reference"/>
     </element>
 </database>
