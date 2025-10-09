@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <role display_value="x_1805892_compan_0.user manager" name="x_1805892_compan_0.user manager">ac5c5eecc3a0fe10124829259901310e</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 14:12:29</sys_created_on>
+        <sys_id>705c5eecc3a0fe101248292599013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ac5c5eecc3a0fe10124829259901310e</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name>sys_embedded_help_role_705c5eecc3a0fe101248292599013112</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 14:12:29</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
