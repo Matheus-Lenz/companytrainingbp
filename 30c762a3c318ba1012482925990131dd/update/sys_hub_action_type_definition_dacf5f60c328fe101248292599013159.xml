@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>build_participant_list_of_trainings</internal_name>
+        <label_cache>[{"name":"{{action.schedulesysid}}","label":"action➛scheduleSysId","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.enrollments}}","label":"action➛schedule_id","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD94112b24bd28fe103894a2a1e94dd4af","child_label":"enrollments_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"enrollments_child0","child_uiUniqueId":"d3bdd1a8-e1f9-4bfa-9c7b-30ec458cef73","uiUniqueId":"095d7aff-4bf8-45c4-9f7c-a0aad9a87d30"}},{"name":"{{action.schedule_id}}","label":"action➛schedule_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0eb68f1b-cd37-4d72-a2d9-2b338c8b3278].participant_list}}","label":"step➛Script step➛participant_list","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>28116b24c328fe101248292599013131</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Build Participant List of trainings</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:07:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dacf5f60c328fe101248292599013159</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Build Participant List of trainings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_dacf5f60c328fe101248292599013159</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:42</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=dacf5f60c328fe101248292599013159"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dacf5f60c328fe101248292599013159"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>dacf5f60c328fe101248292599013159</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>20116b24c328fe101248292599013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">6c116b24c328fe10124829259901310c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>dacf5f60c328fe101248292599013159</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>e0116b24c328fe101248292599013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">ac112b24c328fe1012482925990131f6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dacf5f60c328fe101248292599013159"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>participantlist</field>
+        <id>dacf5f60c328fe101248292599013159</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>e8116b24c328fe101248292599013117</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</table>
+        <value>{{step[0eb68f1b-cd37-4d72-a2d9-2b338c8b3278].participantlist}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>participant_list</field>
+        <id>dacf5f60c328fe101248292599013159</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>3604e328c328fe1012482925990131ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</table>
+        <value>{{step[0eb68f1b-cd37-4d72-a2d9-2b338c8b3278].participant_list}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>dacf5f60c328fe101248292599013159</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>ac116b24c328fe101248292599013117</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>dacf5f60c328fe101248292599013159</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>28116b24c328fe101248292599013117</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=dacf5f60c328fe101248292599013159^sys_idNOT IN24112b24c328fe1012482925990131de,5173e7e4c328fe1012482925990131d2"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</action>
+        <cid>0eb68f1b-cd37-4d72-a2d9-2b338c8b3278</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>24112b24c328fe1012482925990131de</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=24112b24c328fe1012482925990131de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>24112b24c328fe1012482925990131de</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>60112b24c328fe1012482925990131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>24112b24c328fe1012482925990131de</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>68112b24c328fe1012482925990131f3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:54:16</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+&#13;
+    gs.info('DEBUG - ScheduleSysId recebido: ' + inputs.scheduleSysId);&#13;
+&#13;
+    var enrollments = [];&#13;
+    var gr = new GlideRecord('x_1805892_compan_0_enrollment');&#13;
+    gr.addQuery('schedule', inputs.scheduleSysId);&#13;
+    gr.addQuery('state', 3);&#13;
+    gr.query();&#13;
+&#13;
+    while (gr.next()) {&#13;
+        enrollments.push(gr.requested_for.name.toString());&#13;
+    }&#13;
+&#13;
+    if (enrollments.length === 0) {&#13;
+        outputs.participant_list = "No enrolled participants found.";&#13;
+    } else {&#13;
+        outputs.participant_list = enrollments.join(', ');&#13;
+    }&#13;
+&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=24112b24c328fe1012482925990131de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>24112b24c328fe1012482925990131de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>28112b24c328fe1012482925990131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enrollments</field>
+        <id>24112b24c328fe1012482925990131de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>24112b24c328fe1012482925990131f4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:16</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_24112b24c328fe1012482925990131de</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>scheduleSysId</field>
+        <id>24112b24c328fe1012482925990131de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:55:41</sys_created_on>
+        <sys_id>0cea2360c368fe1012482925990131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:41</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_24112b24c328fe1012482925990131de</table>
+        <value>{{action.schedule_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>24112b24c328fe1012482925990131de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>ec112b24c328fe1012482925990131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_24112b24c328fe1012482925990131de^id=24112b24c328fe1012482925990131de"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=24112b24c328fe1012482925990131de"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=24112b24c328fe1012482925990131de"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=24112b24c328fe1012482925990131de^sys_idNOT INccea2360c368fe1012482925990131c8"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scheduleSysId</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">24112b24c328fe1012482925990131de</model>
+        <model_id>24112b24c328fe1012482925990131de</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_24112b24c328fe1012482925990131de</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:55:41</sys_created_on>
+        <sys_id>ccea2360c368fe1012482925990131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=24112b24c328fe1012482925990131de^sys_idNOT IN2204e328c328fe10124829259901318e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5129ab0a-cd3c-4877-8545-94945efc9899</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>participant_list</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>participant_list</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">24112b24c328fe1012482925990131de</model>
+        <model_id>24112b24c328fe1012482925990131de</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_24112b24c328fe1012482925990131de</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:49</sys_created_on>
+        <sys_id>2204e328c328fe10124829259901318e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=24112b24c328fe1012482925990131de"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_24112b24c328fe1012482925990131de^sys_idNOT IN3a04e328c328fe101248292599013191"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>participant_list</element>
+        <help/>
+        <hint/>
+        <label>participant_list</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_24112b24c328fe1012482925990131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:49</sys_created_on>
+        <sys_id>3a04e328c328fe101248292599013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</action>
+        <cid>b3c80e25-0d97-4cca-9c2e-1ce7ee62e1fa</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Look Up Records step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Look Up Records">48526b2dc32a32002841b63b12d3ae72</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:23:16</sys_created_on>
+        <sys_id>5173e7e4c328fe1012482925990131d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5173e7e4c328fe1012482925990131d2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5173e7e4c328fe1012482925990131d2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:23:16</sys_created_on>
+        <sys_id>9973e7e4c328fe1012482925990131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:16</sys_updated_on>
+        <value>x_1805892_compan_0_enrollment</value>
+        <variable display_value="Table">4d19bb21c36a32002841b63b12d3aeef</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5173e7e4c328fe1012482925990131d2</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:23:16</sys_created_on>
+        <sys_id>d573e7e4c328fe1012482925990131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:16</sys_updated_on>
+        <value>2000</value>
+        <variable display_value="Max Results">0677f8e053200300f5bf435723dc34e3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5173e7e4c328fe1012482925990131d2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>5173e7e4c328fe1012482925990131d2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:23:16</sys_created_on>
+        <sys_id>9173e7e4c328fe1012482925990131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_48526b2dc32a32002841b63b12d3ae72</table>
+        <value>schedule.sys_id={{action.schedule_id}}^state=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>limit</field>
+        <id>5173e7e4c328fe1012482925990131d2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:23:16</sys_created_on>
+        <sys_id>dd73e7e4c328fe1012482925990131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_48526b2dc32a32002841b63b12d3ae72</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5173e7e4c328fe1012482925990131d2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:23:16</sys_created_on>
+        <sys_id>5573e7e4c328fe1012482925990131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_48526b2dc32a32002841b63b12d3ae72</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=5173e7e4c328fe1012482925990131d2"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=5173e7e4c328fe1012482925990131d2"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=5173e7e4c328fe1012482925990131d2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5173e7e4c328fe1012482925990131d2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_5173e7e4c328fe1012482925990131d2"/>
+    <sys_hub_action_input action="delete_multiple" query="model=dacf5f60c328fe101248292599013159^sys_idNOT IN05736f64c328fe101248292599013120"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=87bccf80-5dc8-417e-83b9-767107b90a64</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>schedule_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>schedule_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</model>
+        <model_id>dacf5f60c328fe101248292599013159</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_dacf5f60c328fe101248292599013159</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:23:15</sys_created_on>
+        <sys_id>05736f64c328fe101248292599013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=05736f64c328fe101248292599013120"/>
+    <sys_hub_action_output action="delete_multiple" query="model=dacf5f60c328fe101248292599013159^sys_idNOT IN3604e328c328fe1012482925990131a1,6c116b24c328fe10124829259901310c,ac112b24c328fe1012482925990131f6"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=4b584e0e-3a47-448a-bc81-4b408d31f978</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>participant_list</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>participant_list</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</model>
+        <model_id>dacf5f60c328fe101248292599013159</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:49</sys_created_on>
+        <sys_id>3604e328c328fe1012482925990131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3604e328c328fe1012482925990131a1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3604e328c328fe1012482925990131a1"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=042dded7-4184-4ea4-b645-c022309c106e,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</model>
+        <model_id>dacf5f60c328fe101248292599013159</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>6c116b24c328fe10124829259901310c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6c116b24c328fe10124829259901310c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c116b24c328fe10124829259901310c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=60259390-f858-4fa9-b452-7317ad622864</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</model>
+        <model_id>dacf5f60c328fe101248292599013159</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>ac112b24c328fe1012482925990131f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ac112b24c328fe1012482925990131f6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ac112b24c328fe1012482925990131f6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dacf5f60c328fe101248292599013159"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=dacf5f60c328fe101248292599013159^sys_idNOT INe8116b24c328fe101248292599013119"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>e8116b24c328fe101248292599013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=e8116b24c328fe101248292599013119"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_dacf5f60c328fe101248292599013159^sys_idNOT IN1d73e7e4c328fe1012482925990131c3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>schedule_id</element>
+        <help/>
+        <hint/>
+        <label>schedule_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_dacf5f60c328fe101248292599013159</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:23:16</sys_created_on>
+        <sys_id>1d73e7e4c328fe1012482925990131c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:23:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_dacf5f60c328fe101248292599013159"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159^sys_idNOT IN68116b24c328fe101248292599013107,68116b24c328fe101248292599013112,ba04e328c328fe1012482925990131a5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>68116b24c328fe101248292599013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:50</sys_created_on>
+        <sys_id>68116b24c328fe101248292599013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>participant_list</element>
+        <help/>
+        <hint/>
+        <label>participant_list</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:49</sys_created_on>
+        <sys_id>ba04e328c328fe1012482925990131a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_dacf5f60c328fe101248292599013159"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=dacf5f60c328fe101248292599013159^sys_idNOT IN38116b24c328fe1012482925990131c9"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"38116b24c328fe1012482925990131c9","name":"plan","plan_signature":null}}</plan>
+        <snapshot>54ea6360c368fe101248292599013168</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>38116b24c328fe1012482925990131c9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:42</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>build_participant_list_of_trainings</internal_name>
+        <label_cache>[{"name":"{{action.schedulesysid}}","label":"action➛scheduleSysId","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.enrollments}}","label":"action➛schedule_id","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD94112b24bd28fe103894a2a1e94dd4af","child_label":"enrollments_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"enrollments_child0","child_uiUniqueId":"d3bdd1a8-e1f9-4bfa-9c7b-30ec458cef73","uiUniqueId":"095d7aff-4bf8-45c4-9f7c-a0aad9a87d30"}},{"name":"{{action.schedule_id}}","label":"action➛schedule_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0eb68f1b-cd37-4d72-a2d9-2b338c8b3278].participant_list}}","label":"step➛Script step➛participant_list","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Build Participant List of trainings</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Build Participant List of trainings">dacf5f60c328fe101248292599013159</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>28116b24c328fe101248292599013131</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=28116b24c328fe101248292599013131"/>
+    <sys_variable_value action="delete_multiple" query="document_key=28116b24c328fe101248292599013131"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>28116b24c328fe101248292599013131</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>30116b24c328fe101248292599013180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">38116b24c328fe10124829259901316c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>28116b24c328fe101248292599013131</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>7c116b24c328fe10124829259901317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">f4116b24c328fe101248292599013175</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=28116b24c328fe101248292599013131"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>participantlist</field>
+        <id>28116b24c328fe101248292599013131</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>38116b24c328fe10124829259901317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <table>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</table>
+        <value>{{step[0eb68f1b-cd37-4d72-a2d9-2b338c8b3278].participantlist}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>participant_list</field>
+        <id>28116b24c328fe101248292599013131</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:51</sys_created_on>
+        <sys_id>87042728c328fe101248292599013160</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:51</sys_updated_on>
+        <table>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</table>
+        <value>{{step[0eb68f1b-cd37-4d72-a2d9-2b338c8b3278].participant_list}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>28116b24c328fe101248292599013131</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>f8116b24c328fe10124829259901317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <table>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>28116b24c328fe101248292599013131</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>74116b24c328fe10124829259901317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <table>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=28116b24c328fe101248292599013131^sys_idNOT IN68116b24c328fe10124829259901313e,cf042728c328fe101248292599013108"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Participant List of trainings">28116b24c328fe101248292599013131</action>
+        <cid>0eb68f1b-cd37-4d72-a2d9-2b338c8b3278</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>68116b24c328fe10124829259901313e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:42</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=68116b24c328fe10124829259901313e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>68116b24c328fe10124829259901313e</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>38116b24c328fe101248292599013169</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:54:17</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+&#13;
+    gs.info('DEBUG - ScheduleSysId recebido: ' + inputs.scheduleSysId);&#13;
+&#13;
+    var enrollments = [];&#13;
+    var gr = new GlideRecord('x_1805892_compan_0_enrollment');&#13;
+    gr.addQuery('schedule', inputs.scheduleSysId);&#13;
+    gr.addQuery('state', 3);&#13;
+    gr.query();&#13;
+&#13;
+    while (gr.next()) {&#13;
+        enrollments.push(gr.requested_for.name.toString());&#13;
+    }&#13;
+&#13;
+    if (enrollments.length === 0) {&#13;
+        outputs.participant_list = "No enrolled participants found.";&#13;
+    } else {&#13;
+        outputs.participant_list = enrollments.join(', ');&#13;
+    }&#13;
+&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>68116b24c328fe10124829259901313e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>74116b24c328fe101248292599013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=68116b24c328fe10124829259901313e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>68116b24c328fe10124829259901313e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>30116b24c328fe101248292599013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enrollments</field>
+        <id>68116b24c328fe10124829259901313e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>70116b24c328fe10124829259901316a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_68116b24c328fe10124829259901313e</table>
+        <value>{{action.enrollments}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>scheduleSysId</field>
+        <id>68116b24c328fe10124829259901313e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:55:42</sys_created_on>
+        <sys_id>98ea6360c368fe10124829259901314d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_68116b24c328fe10124829259901313e</table>
+        <value>{{action.schedule_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>68116b24c328fe10124829259901313e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>f0116b24c328fe101248292599013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_68116b24c328fe10124829259901313e^id=68116b24c328fe10124829259901313e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=68116b24c328fe10124829259901313e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=68116b24c328fe10124829259901313e"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=68116b24c328fe10124829259901313e^sys_idNOT IN90ea6360c368fe101248292599013142"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scheduleSysId</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>scheduleSysId</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">68116b24c328fe10124829259901313e</model>
+        <model_id>68116b24c328fe10124829259901313e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_68116b24c328fe10124829259901313e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:55:42</sys_created_on>
+        <sys_id>90ea6360c368fe101248292599013142</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=68116b24c328fe10124829259901313e^sys_idNOT IN47042728c328fe10124829259901311d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5129ab0a-cd3c-4877-8545-94945efc9899</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>participant_list</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>participant_list</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">68116b24c328fe10124829259901313e</model>
+        <model_id>68116b24c328fe10124829259901313e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_68116b24c328fe10124829259901313e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:51</sys_created_on>
+        <sys_id>47042728c328fe10124829259901311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=68116b24c328fe10124829259901313e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_68116b24c328fe10124829259901313e^sys_idNOT IN87042728c328fe101248292599013120"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>participant_list</element>
+        <help/>
+        <hint/>
+        <label>participant_list</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_68116b24c328fe10124829259901313e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:51</sys_created_on>
+        <sys_id>87042728c328fe101248292599013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Participant List of trainings">28116b24c328fe101248292599013131</action>
+        <cid>b3c80e25-0d97-4cca-9c2e-1ce7ee62e1fa</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Look Up Records step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Look Up Records">48526b2dc32a32002841b63b12d3ae72</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>cf042728c328fe101248292599013108</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cf042728c328fe101248292599013108"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cf042728c328fe101248292599013108</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>8f042728c328fe101248292599013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <value>x_1805892_compan_0_enrollment</value>
+        <variable display_value="Table">4d19bb21c36a32002841b63b12d3aeef</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cf042728c328fe101248292599013108</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>cb042728c328fe101248292599013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <value>2000</value>
+        <variable display_value="Max Results">0677f8e053200300f5bf435723dc34e3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cf042728c328fe101248292599013108"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>cf042728c328fe101248292599013108</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>87042728c328fe101248292599013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_48526b2dc32a32002841b63b12d3ae72</table>
+        <value>schedule.sys_id={{action.schedule_id}}^state=3</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>limit</field>
+        <id>cf042728c328fe101248292599013108</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>c3042728c328fe101248292599013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_48526b2dc32a32002841b63b12d3ae72</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>cf042728c328fe101248292599013108</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>4b042728c328fe101248292599013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_48526b2dc32a32002841b63b12d3ae72</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=cf042728c328fe101248292599013108"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=cf042728c328fe101248292599013108"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=cf042728c328fe101248292599013108"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cf042728c328fe101248292599013108"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_cf042728c328fe101248292599013108"/>
+    <sys_hub_action_input action="delete_multiple" query="model=28116b24c328fe101248292599013131^sys_idNOT IN8f04e328c328fe1012482925990131f7"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=87bccf80-5dc8-417e-83b9-767107b90a64</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>schedule_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>schedule_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Build Participant List of trainings">28116b24c328fe101248292599013131</model>
+        <model_id>28116b24c328fe101248292599013131</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_28116b24c328fe101248292599013131</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>8f04e328c328fe1012482925990131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8f04e328c328fe1012482925990131f7"/>
+    <sys_hub_action_output action="delete_multiple" query="model=28116b24c328fe101248292599013131^sys_idNOT IN38116b24c328fe10124829259901316c,cb042728c328fe10124829259901312f,f4116b24c328fe101248292599013175"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=60259390-f858-4fa9-b452-7317ad622864</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Build Participant List of trainings">28116b24c328fe101248292599013131</model>
+        <model_id>28116b24c328fe101248292599013131</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>38116b24c328fe10124829259901316c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=38116b24c328fe10124829259901316c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=38116b24c328fe10124829259901316c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=4b584e0e-3a47-448a-bc81-4b408d31f978</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>participant_list</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>participant_list</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Build Participant List of trainings">28116b24c328fe101248292599013131</model>
+        <model_id>28116b24c328fe101248292599013131</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:51</sys_created_on>
+        <sys_id>cb042728c328fe10124829259901312f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cb042728c328fe10124829259901312f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cb042728c328fe10124829259901312f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=042dded7-4184-4ea4-b645-c022309c106e,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Build Participant List of trainings">28116b24c328fe101248292599013131</model>
+        <model_id>28116b24c328fe101248292599013131</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>f4116b24c328fe101248292599013175</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:55:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f4116b24c328fe101248292599013175"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f4116b24c328fe101248292599013175"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=28116b24c328fe101248292599013131"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=28116b24c328fe101248292599013131^sys_idNOT INfc116b24c328fe10124829259901318d"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Build Participant List of trainings">28116b24c328fe101248292599013131</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>fc116b24c328fe10124829259901318d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=fc116b24c328fe10124829259901318d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_28116b24c328fe101248292599013131^sys_idNOT IN0b04e328c328fe1012482925990131fb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>schedule_id</element>
+        <help/>
+        <hint/>
+        <label>schedule_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_28116b24c328fe101248292599013131</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:50</sys_created_on>
+        <sys_id>0b04e328c328fe1012482925990131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_28116b24c328fe101248292599013131"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_28116b24c328fe101248292599013131^sys_idNOT IN0b042728c328fe101248292599013133,34116b24c328fe101248292599013170,78116b24c328fe10124829259901317a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>participant_list</element>
+        <help/>
+        <hint/>
+        <label>participant_list</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:25:51</sys_created_on>
+        <sys_id>0b042728c328fe101248292599013133</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:25:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>34116b24c328fe101248292599013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_28116b24c328fe101248292599013131</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:12:51</sys_created_on>
+        <sys_id>78116b24c328fe10124829259901317a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:12:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_28116b24c328fe101248292599013131"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>dacf5f60c328fe101248292599013159</sys_id>
+        <latest_snapshot>28116b24c328fe101248292599013131</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch9a-06-23-2025_07-23-2025_2226.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

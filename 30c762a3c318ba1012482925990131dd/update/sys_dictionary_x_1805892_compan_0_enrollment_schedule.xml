@@ -20,7 +20,7 @@
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
-        <dynamic_ref_qual/>
+        <dynamic_ref_qual display_value="EnrollmentScheduleFilter">62e80198c3687e1012482925990131a2</dynamic_ref_qual>
         <element>schedule</element>
         <element_reference>false</element_reference>
         <foreign_database/>
@@ -39,7 +39,7 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
+        <reference_qual>javascript:new EnrollmentScheduleQualifier().getScheduleFilter(current.training);</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <spell_check>false</spell_check>
@@ -53,13 +53,13 @@
         <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
         <sys_update_name>sys_dictionary_x_1805892_compan_0_enrollment_schedule</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-08 14:01:47</sys_updated_on>
+        <sys_updated_on>2025-10-09 21:09:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>true</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>dynamic</use_reference_qualifier>
         <virtual>false</virtual>
         <virtual_type>script</virtual_type>
         <widget/>
