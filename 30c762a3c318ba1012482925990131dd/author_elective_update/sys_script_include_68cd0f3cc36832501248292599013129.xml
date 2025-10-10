@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1805892_compan_0.EnrollmentScheduleFilter</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EnrollmentScheduleFilter</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EnrollmentScheduleFilter = Class.create();
+EnrollmentScheduleFilter.prototype = {
+    initialize: function() {},
+
+    getSchedulesForTraining: function(current) {
+        var trainingId = '';
+
+        try {
+            if (current.training)
+                trainingId = current.training.toString();
+            else if (current.variables && current.variables.training)
+                trainingId = current.variables.training.toString();
+        } catch (e) {
+            gs.info('[EnrollmentScheduleFilter] Falha ao recuperar training: ' + e.message);
+        }
+
+        if (!trainingId)
+            return 'sys_idISEMPTY';
+
+        return 'training=' + trainingId;
+    },
+
+    type: 'EnrollmentScheduleFilter'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-10 12:27:16</sys_created_on>
+        <sys_id>68cd0f3cc36832501248292599013129</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>EnrollmentScheduleFilter</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name>sys_script_include_68cd0f3cc36832501248292599013129</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 12:29:46</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>68cd0f3cc36832501248292599013129</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-10 12:27:15</sys_created_on>
+        <sys_id>8ddd8f3cc36832501248292599013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 12:27:15</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Company Training">30c762a3c318ba1012482925990131dd</application>
+        <file_path/>
+        <instance_id>313f7b06eb6d6e5cc040fddacad0cd21</instance_id>
+        <instance_name>dev348309</instance_name>
+        <name>sys_script_include_68cd0f3cc36832501248292599013129</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1805892_compan_0.EnrollmentScheduleFilter&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;EnrollmentScheduleFilter&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var EnrollmentScheduleFilter = Class.create();
+EnrollmentScheduleFilter.prototype = {
+    initialize: function() {},
+
+    getSchedulesForTraining: function(current) {
+        var trainingId = '';
+
+        try {
+            if (current.training)
+                trainingId = current.training.toString();
+            else if (current.variables &amp;&amp; current.variables.training)
+                trainingId = current.variables.training.toString();
+        } catch (e) {
+            gs.info('[EnrollmentScheduleFilter] Falha ao recuperar training: ' + e.message);
+        }
+
+        if (!trainingId)
+            return 'sys_idISEMPTY';
+
+        return 'training=' + trainingId;
+    },
+
+    type: 'EnrollmentScheduleFilter'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-10-10 12:27:16&lt;/sys_created_on&gt;&lt;sys_id&gt;68cd0f3cc36832501248292599013129&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;EnrollmentScheduleFilter&lt;/sys_name&gt;&lt;sys_package display_value="Company Training" source="x_1805892_compan_0"&gt;30c762a3c318ba1012482925990131dd&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Company Training"&gt;30c762a3c318ba1012482925990131dd&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_68cd0f3cc36832501248292599013129&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-10-10 12:29:46&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;68cd0f3cc36832501248292599013129&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-10-10 12:27:15&lt;/sys_created_on&gt;&lt;sys_id&gt;8ddd8f3cc36832501248292599013193&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-10-10 12:27:15&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1013723413</payload_hash>
+        <record_name>EnrollmentScheduleFilter</record_name>
+        <reverted_from/>
+        <source>639ca2a3c318ba1012482925990131f7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-10 12:29:46</sys_created_on>
+        <sys_id>796e4f7cc368325012482925990131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199ce1944770000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 12:29:46</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>fd6e4f7c1b6832502e7121f55b5c9aa6</update_guid>
+        <update_guid_history>fd6e4f7c1b6832502e7121f55b5c9aa6:-1013723413,11dd033cc1683250aeb24088ae78ecd3:-1126482607</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-10 12:30:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1375438f5b034382ad82fe3a0f8405b1</sys_id>
+        <sys_metadata>68cd0f3cc36832501248292599013129</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EnrollmentScheduleFilter</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_scope_delete display_value="">3b27033c69ed47b797c933381cb053b1</sys_scope_delete>
+        <sys_update_name>sys_script_include_68cd0f3cc36832501248292599013129</sys_update_name>
+        <sys_update_version display_value="sys_script_include_68cd0f3cc36832501248292599013129">796e4f7cc368325012482925990131a7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 12:30:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

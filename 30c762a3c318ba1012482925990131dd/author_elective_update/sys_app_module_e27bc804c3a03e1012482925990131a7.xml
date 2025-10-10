@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Company Trainings">af488c00c3a03e1012482925990131af</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Dashboard</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>400</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>https://dev348309.service-now.com/now/platform-analytics-workspace/dashboards/params/edit/false/tab-sys-id/5fb01cc1c3ec325012482925990131a1/sys-id/03b0dc01c3ec325012482925990131c4/filter/a485e8cdc320725012482925990131ac</query>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1805892_compan_0.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-07 14:26:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e27bc804c3a03e1012482925990131a7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Dashboard</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name>sys_app_module_e27bc804c3a03e1012482925990131a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 18:50:29</sys_updated_on>
+        <timeline_page/>
+        <title>Dashboard</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Company Training">30c762a3c318ba1012482925990131dd</application>
+        <file_path/>
+        <instance_id>313f7b06eb6d6e5cc040fddacad0cd21</instance_id>
+        <instance_name>dev348309</instance_name>
+        <name>sys_app_module_e27bc804c3a03e1012482925990131a7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Company Trainings">af488c00c3a03e1012482925990131af</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>DIRECT</link_type><map_page/><mobile_title>Dashboard</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>400</order><override_menu_roles>false</override_menu_roles><query>https://dev348309.service-now.com/now/platform-analytics-workspace/dashboards/params/edit/false/tab-sys-id/5fb01cc1c3ec325012482925990131a1/sys-id/03b0dc01c3ec325012482925990131c4/filter/a485e8cdc320725012482925990131ac</query><report/><require_confirmation>true</require_confirmation><roles>x_1805892_compan_0.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-07 14:26:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e27bc804c3a03e1012482925990131a7</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Dashboard</sys_name><sys_overrides/><sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package><sys_policy/><sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope><sys_update_name>sys_app_module_e27bc804c3a03e1012482925990131a7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-10 18:50:29</sys_updated_on><timeline_page/><title>Dashboard</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1810190023</payload_hash>
+        <record_name>Dashboard</record_name>
+        <reverted_from/>
+        <source>639ca2a3c318ba1012482925990131f7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-10 18:50:29</sys_created_on>
+        <sys_id>fe852401c36072501248292599013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199cf75d34c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 18:50:29</sys_updated_on>
+        <type>Module</type>
+        <update_guid>be85a001e36072508d57b1d155fb8195</update_guid>
+        <update_guid_history>be85a001e36072508d57b1d155fb8195:-1810190023,5f3528cd70207250a2499a6aade58b20:-39328103,f42568cd44207250fd2328ddfeab9024:-1330902293,264c884464a03e105de00d7582bd0dc5:87379414</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Dashboard">26f52c01c360725012482925990131b0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-10 18:52:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>27093896c7d24ce88ade5e80ae5a4310</sys_id>
+        <sys_metadata>e27bc804c3a03e1012482925990131a7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dashboard</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_scope_delete display_value="">3b27033c69ed47b797c933381cb053b1</sys_scope_delete>
+        <sys_update_name>sys_app_module_e27bc804c3a03e1012482925990131a7</sys_update_name>
+        <sys_update_version display_value="sys_app_module_e27bc804c3a03e1012482925990131a7">fe852401c36072501248292599013130</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 18:52:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

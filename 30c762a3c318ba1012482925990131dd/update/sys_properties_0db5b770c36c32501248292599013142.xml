@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>OpenL API endpoint</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1805892_compan_0.integration_endpoint</name>
+        <read_roles/>
+        <suffix>integration_endpoint</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-10 15:21:55</sys_created_on>
+        <sys_id>0db5b770c36c32501248292599013142</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_1805892_compan_0.integration_endpoint</sys_name>
+        <sys_package display_value="Company Training" source="x_1805892_compan_0">30c762a3c318ba1012482925990131dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Company Training">30c762a3c318ba1012482925990131dd</sys_scope>
+        <sys_update_name>sys_properties_0db5b770c36c32501248292599013142</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-10 19:27:00</sys_updated_on>
+        <type>string</type>
+        <value>https://openl-translate.p.rapidapi.com/translate</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=0db5b770c36c32501248292599013142"/>
+</record_update>
